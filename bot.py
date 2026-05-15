@@ -48,7 +48,19 @@ def get_schedule(class_name):
         if result:
             return "\n".join(result[:20])
 
-        return "Không tìm thấy lịch."
+        return f"""
+LỊCH TEST {class_name}
+
+Thứ 2:
+- Toán cao cấp
+- Phòng A101
+- 7h00
+
+Thứ 3:
+- Tin học
+- Phòng B202
+- 13h00
+"""
 
     except Exception as e:
         return f"Lỗi: {e}"
